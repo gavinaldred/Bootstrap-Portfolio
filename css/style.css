@@ -31,7 +31,8 @@ Color Guide
   5. About / Contact Styles --------------------
   6. Footer Styles -------------------- 
   7. Buttons ----------- 
-  8. Misc. Styles ----------- 
+  8. Misc. Styles -----------
+  9. Media Queries ------------------- 
   *************************************************
   ************************************************/
   
@@ -73,6 +74,10 @@ Color Guide
     ----------------------------------------------*/
     .navbar {
         background-color: var(--Jet);
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+
     }
 
     .nav-link {
@@ -86,14 +91,57 @@ Color Guide
     }
     .navbar-toggler {
     background-color: var(--Satin);
-    border: var(--Platinum) 2px solid;
-}
+    border: var(--Platinum) 2px solid;}
+
+    .dropdown-item {
+        color: var(--Platinum);
+    }
+
+    .dropdown-item:active {
+        background-color: var(--Satin);
+    }
+
+    .dropdown-menu.show {
+        background-color: var(--Jet);
+    }
+    .navbar-brand{
+        margin-left: 20px;}
+
+     .dropdown-item:hover{
+    color: var(--Platinum);
+    text-decoration: none;
+    background-color:var(--Satin)
+     }
+
+     .navbar-dark .navbar-brand {
+        color: var(--Platinum);
+     }
     /*----------------------------------------------
     ------------------------------------------------
-    3. Hero Section
+    3. Hero Jumbotron Section
     ------------------------------------------------
     ----------------------------------------------*/
+
+    .img-fluid {
+            width: 20%;
+    }
+
+    .jumbo-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
     
+    .display-4 {
+        font-size: 2.5rem;
+        margin-left: 20px;
+    }
+
+    .jumbotron {
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+    }
     /*----------------------------------------------
     ------------------------------------------------
     4. Work Section
@@ -176,3 +224,38 @@ Color Guide
         padding-bottom: 10px;
     }
   
+
+       /*----------------------------------------------
+    ------------------------------------------------
+    9. Media Queries
+    ------------------------------------------------
+    ----------------------------------------------*/
+
+    @media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+ .navbar-collapse {
+    margin-left: -80px;
+
+}
+
+
+    }
+    @media only screen and (max-width: 600px) {
+.display-4 
+{ margin-top: 30px;
+    font-size: 1.5rem;
+
+}
+
+.lead {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+}
