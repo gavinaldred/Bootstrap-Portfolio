@@ -81,7 +81,7 @@ a:hover {
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /*----------------------------------------------
@@ -188,10 +188,15 @@ ul {
     ------------------------------------------------
     ----------------------------------------------*/
 
-.platinum {
+.aboutcard {
   background-color: var(--Platinum);
+  border: 0px;
 }
 
+.buttonflex {
+  display: flex;
+  justify-content: space-around;
+}
 /*----------------------------------------------
     ------------------------------------------------
     6. Footer Styles
@@ -217,7 +222,7 @@ ul {
   align-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 10px;
+  padding-top: 5px;
   background-color: var(--Jet);
   color: var(--Platinum);
 }
@@ -225,7 +230,6 @@ ul {
 .contactcolumn p {
   padding: 0px 50px;
 }
-
 
 /*----------------------------------------------
     ------------------------------------------------
@@ -268,25 +272,34 @@ ul {
 }
 
 .footer-link {
-    color: #242f40;
-    text-decoration: underline 2px #cca43b;
-  }
-  
-  .footer-link:hover {
-    color: var(--Platinum);
-    background-color: var(--Satin);
-  }
+  color: #242f40;
+  text-decoration: underline 2px #cca43b;
+}
 
-  .btn-primary:focus {
-    color: var(--Platinum);
-    background-color: var(--Jet);
-  }
-  
+.footer-link:hover {
+  color: var(--Platinum);
+  background-color: var(--Satin);
+}
+
+.btn-primary:focus {
+  color: var(--Platinum);
+  background-color: var(--Jet);
+}
+
+.button-margin {
+  margin: 3px;
+}
+
 /*----------------------------------------------
     ------------------------------------------------
     8. Misc. Styles
     ------------------------------------------------
     ----------------------------------------------*/
+
+.center {
+  text-align: center;
+}
+
 .sectionHeading {
   text-align: center;
   padding-bottom: 10px;
@@ -297,15 +310,15 @@ a.gunmetal {
 }
 
 .animate {
-    color: var(--Satin);
-    animation: blinker 1.75s linear infinite;
-    text-decoration: none;
+  color: var(--Satin);
+  animation: blinker 1.75s linear infinite;
+  text-decoration: none;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
-  @keyframes blinker {
-    50% {
-        opacity: 0;
-   }
-  }
+}
 /*----------------------------------------------
     ------------------------------------------------
     9. Media Queries

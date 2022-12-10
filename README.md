@@ -1,4 +1,4 @@
-# <Gavin-Aldred-Boostrap_portfolio>
+# Gavin Aldred Boostrap-portfolio
 ## Description
 
 A Bootsrap portfolio of work to showcase my skills and talents to employers. 
@@ -15,7 +15,7 @@ View the completed project below on the deployed link. A screenshot has also bee
 
  
   
-![My Portfolio](assets/images/readmescreenshot.png)
+![My Portfolio](images/readmescreenshot.png)
    
 
 [Link to the finished deployed website](https://gavinaldred.github.io/Bootstrap-Portfolio/)
