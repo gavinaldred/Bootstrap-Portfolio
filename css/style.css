@@ -163,12 +163,11 @@ ul {
 }
 
 .jumbotron:after {
-  content: ".";
+  content: "";
   display: block;
   height: 2px;
   width: 275px;
   margin: 0px auto;
-
   border-bottom: 2px solid var(--Satin);
 }
 
@@ -259,7 +258,6 @@ ul {
   border-color: var(--Jet) !important;
 }
 
-.btn.focus,
 .btn:focus {
   outline: 0;
   box-shadow: none !important;

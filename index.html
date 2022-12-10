@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,212 +9,181 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
     <title>Document</title>
-</head>
-<body>
-
-     <!-- Navigation Bar -->
-
-     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <a class="navbar-brand" href="#">Bootstrap Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/gavinaldred">Git</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://gavinaldred.github.io/challenge1/">Horiseon Refactor</a>
-                <a class="dropdown-item" href="https://gavinaldred.github.io/gavinaldred/">HTML Cheatsheet</a>
-								<a class="dropdown-item" href="https://gavinaldred.github.io/flexbox-cheat-sheet/">Flexbox Cheatsheet</a>
-                <a class="dropdown-item" href="https://gavinaldred.github.io/website-design-system/">Website Design System</a>
-								<a class="dropdown-item" href="https://gavinaldred.github.io/prework-study-guide/">Bootcamp Pre-Work</a>
-                <a class="dropdown-item" href="https://gavinaldred.github.io/my-portfolio/">Original Portfolio</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://github.com/gavinaldred">All projects on Git</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Hero Section -->
-
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">Bootstrap Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/gavinaldred">Git</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://gavinaldred.github.io/challenge1/" target="_blank">Horiseon Refactor</a>
+              <a class="dropdown-item" href="https://gavinaldred.github.io/gavinaldred/" target="_blank">HTML Cheatsheet</a>
+              <a class="dropdown-item" href="https://gavinaldred.github.io/flexbox-cheat-sheet/" target="_blank">Flexbox Cheatsheet</a>
+              <a class="dropdown-item" href="https://gavinaldred.github.io/website-design-system/" target="_blank">Website Design System</a>
+              <a class="dropdown-item" href="https://gavinaldred.github.io/prework-study-guide/" target="_blank">Bootcamp Pre-Work</a>
+              <a class="dropdown-item" href="https://gavinaldred.github.io/my-portfolio/" target="_blank">Original Portfolio</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://github.com/gavinaldred">All projects on Git</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container jumbo-container">
-          <img class="img-fluid rounded-circle" src="images/me.jpg" alt="Picture of Gavin Aldred">
-          <h1 class="display-4">Gavin Aldred Portfolio</h1>
-          <p class="lead">I'm a (learner) web front end developer. I've always loved frontend and now learning what I need to progress my career.</p>
-         
-        
-        
+        <img class="img-fluid rounded-circle" src="images/me.jpg" alt="Picture of Gavin Aldred">
+        <h1 class="display-4">Gavin Aldred Portfolio</h1>
+        <p class="lead">I'm a (learner) web front end developer. I've always loved frontend and now learning what I need to progress my career<span class="animate">.</span></p>
       </div>
     </div>
-      <!-- Work Section -->
-      <div id="work" class="container">
-        <h2 class="sectionHeading">My Work</h2>
-        <div class="row work-bottom-margin>">
-          <!-- Card 1 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card shadow p-3 bg-white rounded">
-              <img src="./images/horiseon_600.jpg" class="card-img-top" alt="Horiseon website image">
-              <div class="card-body">
-                <h5 class="card-title">Horiseon Refactor</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
-                <a href="https://gavinaldred.github.io/challenge1/" class="btn btn-primary">View Horiseon</a>
-              </div>
-            </div>
-          </div>
-          <!-- End card 1 -->
-    
-          <!-- Card 2 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card shadow p-3  bg-white rounded">
-              <img src="./images/html_cheat600.jpg" class="card-img-top" alt="screen shot of HTML Cheatsheet">
-              <div class="card-body">
-                <h5 class="card-title">HTML Cheatsheet</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
-                <a href="https://gavinaldred.github.io/gavinaldred/" class="btn btn-primary">View Cheatsheet</a>
-              </div>
-            </div>
-          </div>
-          <!-- End card 2 -->
-    
-          <!-- Card 3 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card shadow p-3  bg-white rounded">
-              <img src="./images/flex_cheat600.jpg"class="card-img-top" alt="Flexbox cheatsheet screenshot">
-              <div class="card-body">
-                <h5 class="card-title">Flexbox Cheatsheet</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
-                <a href="https://gavinaldred.github.io/flexbox-cheat-sheet/" class="btn btn-primary">View Flexbox</a>
-              </div>
+    <!-- Work Section -->
+    <div id="work" class="container">
+      <h2 class="sectionHeading">My Work</h2>
+      <div class="row work-bottom-margin>">
+        <!-- Card 1 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card shadow p-3 bg-white rounded">
+            <img src="./images/horiseon_600.jpg" class="card-img-top" alt="Horiseon website image">
+            <div class="card-body">
+              <h5 class="card-title">Horiseon Refactor</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
+              <a href="https://gavinaldred.github.io/challenge1/" class="btn btn-primary">View Horiseon</a>
             </div>
           </div>
         </div>
-          <!-- End card 3 -->
-          <div class="row work-bottom-margin">
-          <!-- Card 3 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card shadow p-3  bg-white rounded">
-              <img src="./images/design_system600.jpg" class="card-img-top" alt="Screengrab of website design system">
-              <div class="card-body">
-                <h5 class="card-title">Website Design System</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
-                <a href="https://gavinaldred.github.io/website-design-system/" class="btn btn-primary">View Design System</a>
-              </div>
-            </div>
-          </div>
-          <!-- End card 3 -->
-
-          <!-- Card 3 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card shadow p-3  bg-white rounded">
-              <img src="./images/bootcamp_600.jpg" class="card-img-top" alt="Screen grab of bootcamp pre-work">
-              <div class="card-body">
-                <h5 class="card-title">Bootcamp Pre-Work</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere. </p>
-                <a href="https://gavinaldred.github.io/prework-study-guide/" class="btn btn-primary">View Pre-Work</a>
-              </div>
-            </div>
-          </div>
-          <!-- End card 3 -->
-
-          <!-- Card 3 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card shadow p-3 mb-5 bg-white rounded">
-              <img src="./images/portfolio600.jpg" class="card-img-top" alt="Screen grab of my non bootstrap Portfolio">
-              <div class="card-body">
-                <h5 class="card-title">Original Portfolio</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
-                <a href="https://gavinaldred.github.io/my-portfolio/" class="btn btn-primary">View Original Portfolio</a>
-              </div>
+        <!-- End card 1 -->
+        <!-- Card 2 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card shadow p-3 bg-white rounded">
+            <img src="./images/html_cheat600.jpg" class="card-img-top" alt="Screen shot of HTML Cheatsheet">
+            <div class="card-body">
+              <h5 class="card-title">HTML Cheatsheet</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
+              <a href="https://gavinaldred.github.io/gavinaldred/" class="btn btn-primary">View Cheatsheet</a>
             </div>
           </div>
         </div>
-          <!-- End card 3 -->
-    
+        <!-- End card 2 -->
+        <!-- Card 3 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card shadow p-3 bg-white rounded">
+            <img src="./images/flex_cheat600.jpg"class="card-img-top" alt="Flexbox cheatsheet screenshot">
+            <div class="card-body">
+              <h5 class="card-title">Flexbox Cheatsheet</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
+              <a href="https://gavinaldred.github.io/flexbox-cheat-sheet/" class="btn btn-primary">View Flexbox</a>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- End cards -->
-
-      
-
-      <!-- Skills Section & Contact -->
-
-   
-			
-				<div id="about" class="container">
-					<h2 class="sectionHeading">A little bit about me..<span class="animate">.</span></h2>	
-					<div class="row">
-						<div class="col-sm-3 col-md-6">
-							<div class="card aboutcard">
-								<div class="card-body">
-									<h5 class="card-title">My Skills</h5>
-									<p class="card-text center">I'm currently studying these front-end fundementals:</p>
-								<div class="buttonflex">
-								<a href="https://www.w3schools.com/html/" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">HTML</a>
-									<a href="https://www.w3schools.com/css/" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">CSS</a>
-										<a href="https://www.w3schools.com/js/default.asp" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">Javascript</a>
-										<a href="https://www.w3schools.com/react/default.asp" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">React</a>
-							</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="card aboutcard">
-								<div class="card-body">
-									<h5 class="card-title">Get in Touch</h5>
-									<p class="card-text">Why not say hello👋? You can find me on <a class="footer-link" href="mailto:gavinaldred1@gmail.com">email</a>, <a class="footer-link" href="https://www.linkedin.com/in/gavin-aldred-83aa0527/">Linkedin</a>, <a class="footer-link" href="https://github.com/gavinaldred/">GitHub</a>, or you can give me a call on 07825 985 686. </p>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-
+      <!-- End card 3 -->
+      <div class="row work-bottom-margin">
+        <!-- Card 4 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card shadow p-3 bg-white rounded">
+            <img src="./images/design_system600.jpg" class="card-img-top" alt="Screengrab of website design system">
+            <div class="card-body">
+              <h5 class="card-title">Website Design System</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
+              <a href="https://gavinaldred.github.io/website-design-system/" class="btn btn-primary">View Design System</a>
+            </div>
+          </div>
+        </div>
+        <!-- End card 4 -->
+        <!-- Card 5 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card shadow p-3 bg-white rounded">
+            <img src="./images/bootcamp_600.jpg" class="card-img-top" alt="Screen grab of bootcamp pre-work">
+            <div class="card-body">
+              <h5 class="card-title">Bootcamp Pre-Work</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere. </p>
+              <a href="https://gavinaldred.github.io/prework-study-guide/" class="btn btn-primary">View Pre-Work</a>
+            </div>
+          </div>
+        </div>
+        <!-- End card 5 -->
+        <!-- Card 6 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="./images/portfolio600.jpg" class="card-img-top" alt="Screen grab of my non bootstrap Portfolio">
+            <div class="card-body">
+              <h5 class="card-title">Original Portfolio</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus velit quas sequi autem quae, perferendis facere.</p>
+              <a href="https://gavinaldred.github.io/my-portfolio/" class="btn btn-primary">View Original Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End card 6 -->
+    </div>
+    </div>
+    <!-- End cards -->
+    <!-- Skills Section & Contact -->
+    <div id="about" class="container">
+      <h2 class="sectionHeading">A little bit about me..<span class="animate">.</span></h2>
+      <div class="row">
+        <div class="col-sm-3 col-md-6">
+          <div class="card aboutcard">
+            <div class="card-body">
+              <h5 class="card-title">My Skills</h5>
+              <p class="card-text center">I'm currently studying these front-end fundementals:</p>
+              <div class="buttonflex">
+                <a href="https://www.w3schools.com/html/" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">HTML</a>
+                <a href="https://www.w3schools.com/css/" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">CSS</a>
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">Javascript</a>
+                <a href="https://www.w3schools.com/react/default.asp" target="_blank" type="button" class="btn btn-primary btn-lg button-margin">React</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card aboutcard">
+            <div class="card-body">
+              <h5 class="card-title">Get in Touch</h5>
+              <p class="card-text">Why not say hello👋? You can find me on <a class="footer-link" href="mailto:gavinaldred1@gmail.com">email</a>, <a class="footer-link" href="https://www.linkedin.com/in/gavin-aldred-83aa0527/">Linkedin</a>, <a class="footer-link" href="https://github.com/gavinaldred/">GitHub</a>, or you can give me a call on 07825 985 686. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer Section -->
-		
-
     <footer class="footer ">
-        <h4>Made with 🔥 by <span ><a class="footer-link" href="https://github.com/gavinaldred" target="_blank" >Gavin</a></span></h4>
-        <p>
-           © 2022 Gavin Aldred
-        </p>
-				
-		 <section id="contact">
-			<div class="contactcolumn">
-				 <p><a href="#"></a><button type="button" class="btn btn-primary btn-sm">📱 07825 985686</button></p>
-				 <p><a href="mailto:gavinaldred1@gmail.com"><button type="button" class="btn btn-primary btn-sm">✉️ gavinaldred1@gmail.com</button></a></p>
-				 <p><a href="https://github.com/gavinaldred/"><button type="button" class="btn btn-primary btn-sm">💻	GitHub</button></a></p>
-				 <p> <a href="https://www.linkedin.com/in/gavin-aldred-83aa0527/"><button type="button" class="btn btn-primary btn-sm">🖲️ Linkedin</button></p>
-				 </a></p>
-			</div>
-			</section>
-     </footer>
-
-
-
+      <h4>Made with 🔥 by <span ><a class="footer-link" href="https://github.com/gavinaldred" target="_blank" >Gavin</a></span></h4>
+      <p>
+        © 2022 Gavin Aldred
+      </p>
+      <section id="contact">
+        <div class="contactcolumn">
+          <p><a href="#"></a><button type="button" class="btn btn-primary btn-sm">📱 07825 985686</button></p>
+          <p><a href="mailto:gavinaldred1@gmail.com"><button type="button" class="btn btn-primary btn-sm">✉️ gavinaldred1@gmail.com</button></a></p>
+          <p><a href="https://github.com/gavinaldred/"><button type="button" class="btn btn-primary btn-sm">💻	GitHub</button></a></p>
+          <p> <a href="https://www.linkedin.com/in/gavin-aldred-83aa0527/"><button type="button" class="btn btn-primary btn-sm">🖲️ Linkedin</button></p>
+          </a></p>
+        </div>
+      </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    
-    
-</body>
+  </body>
 </html>
-
