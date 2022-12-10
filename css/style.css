@@ -2,26 +2,25 @@
 **************************************************
 
 
-Color Guide
+Color & Font Guide
 ****************/
 
 :root {
-    /*  HEADER AND CONTACT PRIMARY COLOUR */
-    --Jet: #363636;
-   /* FONT OUT OF DARK AND PAGE COLOUR */
-    --Platinum: #E5E5E5;
-   /* MAIN FONT COLOUR */
-    --Gunmetal: #242F40;
-   /* ACCENT AND HIGHLIGHT COLOUR */
-    --Satin: #CCA43B;
-   /* MAIN BODY FONT */
-    --cabin: 'Cabin';
-   /* HEADINGS FONT */
-    --Roboto: 'Roboto Condensed';
-  }
-  
-  
-  /************************************************
+  /*  HEADER AND CONTACT PRIMARY COLOUR */
+  --Jet: #363636;
+  /* FONT OUT OF DARK AND PAGE COLOUR */
+  --Platinum: #e5e5e5;
+  /* MAIN FONT COLOUR */
+  --Gunmetal: #242f40;
+  /* ACCENT AND HIGHLIGHT COLOUR */
+  --Satin: #cca43b;
+  /* MAIN BODY FONT */
+  --cabin: "Cabin";
+  /* HEADINGS FONT */
+  --Roboto: "Roboto Condensed";
+}
+
+/************************************************
   *************************************************
   0. CSS Reset ------------------------ 
   1. Universal Styles -----------------
@@ -35,227 +34,308 @@ Color Guide
   9. Media Queries ------------------- 
   *************************************************
   ************************************************/
-  
-  /*----------------------------------------------
+
+/*----------------------------------------------
   ------------------------------------------------
   0. CSS Reset
   ------------------------------------------------
   ----------------------------------------------*/
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    /*----------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*----------------------------------------------
     ------------------------------------------------
     1. Universal Styles
     ------------------------------------------------
     ----------------------------------------------*/
-    body {
-      Font-Family: 'Cabin';
-      line-height: 1.5;
-      color: var(--Gunmetal);
-      background-color: var(--Platinum);
-  }
+body {
+  font-family: "Cabin";
+  line-height: 1.5;
+  color: var(--Gunmetal);
+  background-color: var(--Platinum);
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-family: var(--Roboto);
-  }
-  
-  .row {
-    margin-bottom: 25px!important;
-  }
-  
-    /*----------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--Roboto);
+}
+
+.row {
+  margin-bottom: 25px !important;
+}
+
+a {
+  color: var(--Platinum);
+}
+
+a:hover {
+  color: var(--Satin);
+  text-decoration: var(--Platinum) underline 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+/*----------------------------------------------
     ------------------------------------------------
     2. Navigation Bar
     ------------------------------------------------
     ----------------------------------------------*/
-    .navbar {
-        background-color: var(--Jet);
-        position: fixed;
-        width: 100%;
-        z-index: 10;
+.navbar {
+  background-color: var(--Jet);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
 
-    }
+.nav-link {
+  color: var(--Platinum) !important;
+}
 
-    .nav-link {
-        color: var(--Platinum)!important;
-    }
-    
-    .nav-link:hover {
-        background-color: var(--Satin);
-        border-radius: 5px;
-        transition: 0.3s ease;
-    }
-    .navbar-toggler {
-    background-color: var(--Satin);
-    border: var(--Platinum) 2px solid;}
+.nav-link:hover {
+  background-color: var(--Satin);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.navbar-toggler {
+  background-color: var(--Satin);
+  border: var(--Platinum) 2px solid;
+}
 
-    .dropdown-item {
-        color: var(--Platinum);
-    }
+.dropdown-item {
+  color: var(--Platinum);
+}
 
-    .dropdown-item:active {
-        background-color: var(--Satin);
-    }
+.dropdown-item:active {
+  background-color: var(--Satin);
+}
 
-    .dropdown-menu.show {
-        background-color: var(--Jet);
-    }
-    .navbar-brand{
-        margin-left: 20px;}
+.dropdown-menu.show {
+  background-color: var(--Jet);
+}
+.navbar-brand {
+  margin-left: 20px;
+}
 
-     .dropdown-item:hover{
-    color: var(--Platinum);
-    text-decoration: none;
-    background-color:var(--Satin)
-     }
+.dropdown-item:hover {
+  color: var(--Platinum);
+  text-decoration: none;
+  background-color: var(--Satin);
+}
 
-     .navbar-dark .navbar-brand {
-        color: var(--Platinum);
-     }
-    /*----------------------------------------------
+.navbar-dark .navbar-brand {
+  color: var(--Platinum);
+}
+/*----------------------------------------------
     ------------------------------------------------
     3. Hero Jumbotron Section
     ------------------------------------------------
     ----------------------------------------------*/
 
-    .img-fluid {
-            width: 20%;
-    }
+.img-fluid {
+  width: 20%;
+  border: var(--Satin) 1px solid;
+}
 
-    .jumbo-container{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-    }
-    
-    .display-4 {
-        font-size: 2.5rem;
-        margin-left: 20px;
-    }
+.jumbo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-    .jumbotron {
-        margin-bottom: 10px;
-        padding-bottom: 15px;
-    }
-    /*----------------------------------------------
+.display-4 {
+  font-size: 2.5rem;
+  margin-left: 20px;
+}
+
+.jumbotron {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  background-color: var(--Platinum);
+}
+
+.jumbotron:after {
+  content: ".";
+  display: block;
+  height: 2px;
+  width: 275px;
+  margin: 0px auto;
+
+  border-bottom: 2px solid var(--Satin);
+}
+
+/*----------------------------------------------
     ------------------------------------------------
     4. Work Section
     ------------------------------------------------
     ----------------------------------------------*/
 
-    .card-title {
-        text-align: center;
-    }
-    
-    /*----------------------------------------------
+.card-title {
+  text-align: center;
+}
+
+/*----------------------------------------------
     ------------------------------------------------
     5. About / Contact Section
     ------------------------------------------------
     ----------------------------------------------*/
-    
-    /*----------------------------------------------
+
+.platinum {
+  background-color: var(--Platinum);
+}
+
+/*----------------------------------------------
     ------------------------------------------------
     6. Footer Styles
     ------------------------------------------------
     ----------------------------------------------*/
-    .footer {
-      padding: 20px;
-      clear: both;
-      text-align: center;
-      font-size: 20px;
-    }
-    
-    /*----------------------------------------------
+
+.footer {
+  clear: both;
+  text-align: center;
+  font-size: 20px;
+}
+
+.columnabout {
+  display: flex;
+  width: 70%;
+  padding: 10px;
+  margin: auto;
+}
+.contactcolumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: var(--Jet);
+  color: var(--Platinum);
+}
+
+.contactcolumn p {
+  padding: 0px 50px;
+}
+
+
+/*----------------------------------------------
     ------------------------------------------------
     7. Buttons
     ------------------------------------------------
     ----------------------------------------------*/
 
-    .btn {
-        display: flex;
-        justify-content: center;
-    }
+.btn {
+  display: flex;
+  justify-content: center;
+}
 
+.btn-primary {
+  color: var(--Platinum);
+  background-color: var(--Satin);
+  border-color: var(--Satin);
+}
 
-    .btn-primary
-    {
-     color: var(--Platinum);
-     background-color: var(--Satin);
-     border-color: var(--Satin);
-    }
-    
-    .btn-primary:hover{
-        background-color: var(--Jet);
-        border-color: var(--Jet);
-        box-shadow: 15px 15px 15px rgba(36,47,64,0.3); 
-    }
-    
-    .btn-primary:active{
-        background-color: var(--Jet)!important;;
-        border-color: var(--Jet)!important;;
-    }
+.btn-primary:hover {
+  background-color: var(--Jet);
+  border-color: var(--Jet);
+  box-shadow: 15px 15px 15px rgba(36, 47, 64, 0.3);
+}
 
-    .btn.focus, .btn:focus {
-        outline: 0;
-        box-shadow: none!important;
-    }
+.btn-primary:active {
+  background-color: var(--Jet) !important;
+  border-color: var(--Jet) !important;
+}
 
-    .btn-primary:visited
-    {
-     color: var(--Platinum);
-     background-color: var(--Satin);
-     border-color: var(--Satin);
-    }
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
 
+.btn-primary:visited {
+  color: var(--Platinum);
+  background-color: var(--Satin);
+  border-color: var(--Satin);
+}
+
+.footer-link {
+    color: #242f40;
+    text-decoration: underline 2px #cca43b;
+  }
   
+  .footer-link:hover {
+    color: var(--Platinum);
+    background-color: var(--Satin);
+  }
 
-    /*----------------------------------------------
+  .btn-primary:focus {
+    color: var(--Platinum);
+    background-color: var(--Jet);
+  }
+  
+/*----------------------------------------------
     ------------------------------------------------
     8. Misc. Styles
     ------------------------------------------------
     ----------------------------------------------*/
-    .sectionHeading {
-        text-align: center;
-        padding-bottom: 10px;
-    }
-  
+.sectionHeading {
+  text-align: center;
+  padding-bottom: 10px;
+}
 
-       /*----------------------------------------------
+a.gunmetal {
+  color: var(--Gunmetal) !important;
+}
+
+.animate {
+    color: var(--Satin);
+    animation: blinker 1.75s linear infinite;
+    text-decoration: none;
+  }
+  @keyframes blinker {
+    50% {
+        opacity: 0;
+   }
+  }
+/*----------------------------------------------
     ------------------------------------------------
     9. Media Queries
     ------------------------------------------------
     ----------------------------------------------*/
 
-    @media (min-width: 992px) {
-.navbar-expand-lg .navbar-nav .nav-link {
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
-}
+  }
 
- .navbar-collapse {
+  .navbar-collapse {
     margin-left: -80px;
-
+  }
 }
-
-
-    }
-    @media only screen and (max-width: 600px) {
-.display-4 
-{ margin-top: 30px;
+@media only screen and (max-width: 600px) {
+  .display-4 {
+    margin-top: 30px;
     font-size: 1.5rem;
+  }
 
-}
-
-.lead {
+  .lead {
     font-size: 0.8rem;
     font-weight: 300;
     margin-left: 15px;
     margin-top: 40px;
-}
+  }
 
+  .cardContainer {
+    margin-bottom: 5px;
+  }
 }
