@@ -167,7 +167,7 @@ ul {
   display: block;
   height: 2px;
   width: 275px;
-  margin: 0px auto;
+  margin: 0 auto;
   border-bottom: 2px solid var(--Satin);
 }
 
@@ -181,6 +181,17 @@ ul {
   text-align: center;
 }
 
+.card:hover {
+  box-shadow: 8px 8px 8px #363636;
+  transform: scale(1.2);
+}
+
+.card {
+  background-color: var(--Platinum);
+  height: 95%;
+  transition: 0.6s;
+  margin: 1rem;
+}
 /*----------------------------------------------
     ------------------------------------------------
     5. About / Contact Section
@@ -221,7 +232,7 @@ ul {
   align-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-top: 5px;
+  padding-top: 10px;
   background-color: var(--Jet);
   color: var(--Platinum);
 }
@@ -317,6 +328,7 @@ a.gunmetal {
     opacity: 0;
   }
 }
+
 /*----------------------------------------------
     ------------------------------------------------
     9. Media Queries
