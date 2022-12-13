@@ -256,6 +256,7 @@ ul {
   color: var(--Platinum);
   background-color: var(--Satin);
   border-color: var(--Satin);
+  box-shadow: 5px 5px 5px rgba(36, 47, 64, 0.3);
 }
 
 .btn-primary:hover {
@@ -295,9 +296,11 @@ ul {
   background-color: var(--Jet);
 }
 
-.button-margin {
-  margin: 3px;
+.btn-sm {
+  box-shadow: 1px 1px 1px var(--Platinum)
 }
+
+
 
 /*----------------------------------------------
     ------------------------------------------------
